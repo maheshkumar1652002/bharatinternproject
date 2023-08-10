@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+
+        .left {
+            position: absolute;
+            left: 150px;
+            top: 15px;
+            display: inline-block;
+            color: white;
+
+        }
+
+        .right {
+            position: absolute;
+            right: 120px;
+            top: 50px;
+            display: inline-block;
+            color: white;
+            
+        }
+
+        .Eng {
+            background-color: black;
+            color: whitesmoke;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        button {
+            padding: 7px;
+            background-color: red;
+            border-radius: 6px;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .navbar li {
+            padding: 10px;
+            display: inline-block;
+        }
+
+        a {
+            border: 10px solid black;
+            color: white;
+            background-color: rgb(0, 0, 0);
+            font-size: larger;
+            text-decoration: none;
+        }
+
+        .container {
+            color: white;
+            display: inline-block;
+            margin: 250px 300px;
+            font-size: 26px;
+
+        }
+
+        .para {
+            display: inline-block;
+            margin: 0px 220px;
+
+        }
+
+        .para1 {
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .form {
+
+            display: block;
+            margin: 0px 250px;
+            font-size: 0px;
+        }
+
+        .submit {
+            width: 180px;
+            position: absolute;
+            border: 2px solid red;
+            display: inline-block;
+            padding: 15px;
+            margin: 10px 250px;
+        }
+        
+        .Email {
+            position: absolute;
+            width: 350px;
+            border: 1px solid grey;
+            background-color: transparent;
+            padding: 15px;
+            margin: 10px -150px;
+            font-size: 20px;
+        }
+        .Email1 {
+            display: inline-block;
+            position: absolute;
+            width: 350px;
+            border: 1px solid grey;
+            background-color: transparent;
+            padding: 15px;
+            margin: 10px -300px;
+            font-size: 20px;
+        }
+
+        .header {
+            filter: brightness(40%);
+            background: url('https://assets.nflxext.com/ffe/siteui/vlv3/bff5732c-7d13-45d1-9fab-476db25a1827/46bc87cd-4c4c-4485-8b93-d5f21c581d56/IN-en-20230710-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+            border-bottom: 10px solid rgb(18, 7, 7);
+            width: auto;
+            background-repeat: no-repeat;
+        }
+
+        .para2 {
+            padding: 90px;
+            background-color: black;
+            color: white;
+        }
+
+        .Enjoy {
+            border: 2px solid white;
+            background-color: black;
+            padding: 150px;
+        }
+
+        .Download {
+            border-top: 8px solid grey;
+            background-color: black;
+            color: white;
+        }
+        .text-col1 {
+            padding: 80px;
+        }
+
+        .para4 {
+            padding: 80px;
+            border-bottom:10px solid grey;        }
+
+        .text-col2 {
+            padding: 50px;
+            margin: 1px 120px;
+        }
+
+        .Ask {
+            padding-bottom: 70px;
+            font-size: 50px;
+            width: 800px;
+            display: inline-block;
+            margin: -50px 300px;
+            font-family: Angkor;
+            font-weight: 900;
+            
+        }
+
+        .Watch {
+            border-top: 8px solid grey;
+            background-color: black;
+            color: white;
+        }
+
+        .text-col3 {
+            padding: 100px;
+            
+        }
+
+        img {
+            margin: 20px 100px;
+            height: 250px;
+            border-radius: 4px;
+            padding: 5px;
+            width: 400px;
+        }
+        .img1{
+            margin: 1px 600px;
+            height: 300px;
+            border-radius: 4px;
+            padding: 10px;
+            width: 400px;
+        }
+        .img2{
+            display: inline-block;
+            margin: 20px 70px;
+            height: 400px;
+            width: 500px;
+        }
+        .img3{
+            position: relative;
+            height: 80px;
+            width: 60px;
+            margin: 50px -470px;
+        }
+        .img4{
+            position: absolute;
+            height: 300px;
+            margin: -150px 150px ;
+            height: 400px;
+            width: 500px;
+        }
+        .Kids {
+            padding: 35px;
+            border-top: 0px solid grey;
+            border-bottom: 2px solid grey;
+            background-color: black;
+            color: white;
+        }
+
+        .Question {
+            border: 2px solid grey;
+            padding: 24px;
+            margin: 12px 120px;
+            font-size: 20px;
+            background-color: rgba(30, 28, 28, 0.625);
+            color: rgba(245, 245, 245, 0.764);
+        }
+
+        .Help {
+            top: 2px;
+            color: grey;
+            background-color: black;
+        }
+
+        .call {
+            color: rgba(245, 245, 245, 0.764);
+            width: 500px;
+            height: 30px;
+            margin: 10px 170px;
+            position: relative;
+            display: block;
+            font-size: 19px;
+        }
+
+        .number {
+            color: rgba(245, 245, 245, 0.764);
+            font-size: 19px;
+            text-decoration: underline;
+            height: 100px;
+            width: 500px;
+            margin: -40px 300px;
+        }
+
+        ul {
+            color: rgba(245, 245, 245, 0.764);
+            margin: -50px 110px;
+            padding: 1px;
+        }
+
+        .s {
+            text-decoration: underline;
+            width: 200px;
+            display: inline-block;
+            margin: 10px 60px;
+            cursor: pointer;
+        }
+
+        .a {
+            cursor: pointer;
+            text-decoration: underline;
+            width: 200px;
+            display: inline-block;
+            margin: 10px 60px;
+        }
+
+        .b {
+            cursor: pointer;
+            text-decoration: underline;
+            width: 200px;
+            display: inline-block;
+            margin: 10px 60px;
+        }
+
+        .c {
+            cursor: pointer;
+            text-decoration: underline;
+            width: 200px;
+            display: inline-block;
+            margin: 10px 60px;
+        }
+
+        .d {
+            cursor: pointer;
+            text-decoration: underline;
+            width: 200px;
+            display: inline-block;
+            margin: 10px 60px;
+        }
+
+        .e {
+            color: rgba(245, 245, 245, 0.764);
+            margin: -2px 170px;
+        }
+
+        .English {
+            border: 2px solid black;
+            border-top: 1px solid white;
+            border-right: 1px solid white;
+            border-bottom: 1px solid white;
+            color: whitesmoke;
+            padding: 8.5px;
+            margin: 50px 190px;
+            background-color: black;
+        }
+
+        .material-symbols-outlined {
+            border: 1px solid white;
+            border-right: 20px;
+            position: absolute;
+            padding: 5px;
+            margin: 50px 165px;
+        }
+
+        .plus {
+            cursor: pointer;
+            display: inline-block;
+            font-family: "wide-font";
+            font-weight: bolder;
+            font-size: 50px;
+            margin: -100px 950px;
+        }
+
+        .para6 {
+            display: inline-block;
+            padding: 10px;
+            margin: 10px 300px;
+            font-size: 20px;
+        }
+
+        .form1 {
+            color: whitesmoke;
+            padding: 20px;
+            margin: -25px 650px;
+        }
+
+        .submit1 {
+            position: absolute;
+            padding: 15px;
+            margin: 5px 200px;
+        }
+
+        .create {
+            width: 400px;
+            position: absolute;
+            display: inline-block;
+            font-size: 55px;
+            margin: 10px 45px;
+        }
+
+        .creates {
+            width: 510px;
+            font-size: 25px;
+            position: absolute;
+            margin: -150px 650px;
+            padding: 10px;
+        }
+        .c1{
+            position: absolute;
+            margin: -250px 30px;
+            font-size: 50px;
+        }
+        .p1{
+            width: 500px;
+            position: absolute;
+            display: inline;
+            font-size: 25px;
+            margin: -180px 30px;
+        }
+        .c2{
+            position: absolute;
+            margin: -400px 640px;
+            font-size: 60px;
+            width: 400px;
+        }
+        .p2{
+            position: absolute;
+            margin: -180px 640px;
+            width: 500px;
+            font-size: 25px;
+        }
+        .c3{
+            position: absolute;
+            font-size: 55px;
+            margin: -50px 20px;            
+        }
+        .p3{
+            position: absolute;
+            font-size: 25px;
+            width: 550px;
+            margin: 40px 20px;
+        }
+        .Enjoy{
+            padding: 200px;
+            border-top: 8px solid grey;
+            border-left: 1px solid black;
+        }
+        .img5{
+            margin: -80px 40px;
+            height: 200px;
+            width: 150px;
+        }
+        .globe1{
+            border: 15px solid blue;
+        }
+        .arrow{
+            border: 2px solid red;
+            position: absolute;
+            margin: -80px -40px;
+        }
+        .sub{
+            border: 2px solid red;
+            width: 180px;
+            padding: 15px;
+            margin: 10px 100px;
+        }
+        .Question:hover{
+            background-color: grey;
+            cursor: pointer;
+        }
+        </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            <svg class="img5"
+            width="100" fill="#E50816" viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                class="default-ltr-cache-1d568uk eaitdun1">
+                <g>
+                    <path
+                        d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z">
+                    </path>
+                </g>
+            </svg>
+        </div>
+        <div class="right">
+            <ul class="navbar">
+                <select class="Eng" id="English">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                    
+                </select>
+                <li><button>Sign In</button></li>
+            </ul>
+        </div>
+        <div class="container">
+            <h1>Unlimited movies, TV shows and more</h1>
+            <h4 class="para">Watch anywhere. Cancel anytime.</h4>
+            <p class="para1">Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="form">
+                <input class="Email" placeholder="Email address">
+                    arrow_forward_ios
+                    </span>
+                <button class="submit" type="Submit">Get Started
+                    <div class="arrow">
+                        <span class="material-symbols-outlined">
+                            navigate_next
+                            </span>
+                        </div>
+                </button>
+            </form>
+        </div>
+    </div>
+    <section class="Enjoy">
+        <div class="para2">
+            <div class="row">
+                <div class="text-col">
+                    <h1 class="c3">Enjoy on your TV
+                        <img class="img4" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+                            alt="">
+                    </h1>
+                    <h3 class="p3">Watch onm smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blue-ray players and more</h3>
+                </div>
+            </div>
+             
+        </div>
+    </section>
+    <section class="Download">
+        <div class="para3">
+            <div class="column">
+                <div class="text-col1">
+                    <img class="img2" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+                        alt="">
+                    <img class="img3" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png"
+                        alt="">
+                    <h1 class="c2">Download your shows to watch offline</h1>
+                    <p class="p2">Save your favourite easily and always have something to watch</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Watch">
+        <div class="para4">
+            <div class="column1">
+                <div class="text-col2">
+                    <img class="img1" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+                        alt="">
+                    <h1 class="c1">Watch Everywhere</h1>
+                    <p class="p1">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Kids">
+        <div class="para5">
+            <div class="column2">
+                <div class="text-col3">
+                    <img src="https://occ-0-6247-2186.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"
+                        alt="">
+                    <h1 class="create">Create profiles for kids</h1>
+                    <p class="creates">Send children on adventures with their favourite characters in a space made just
+                        for them--free with your membership.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Watch">
+        <div class="para4">
+            <div class="column1">
+                <div class="text-col4">
+                    <h1 class="Ask">Frequently Asked Questions</h1>
+                    <p class="Question">What is Netflix? <span class="plus">&#43;</span></p>
+                    <p class="Question">How much does Netflix cost? <span class="plus">&#43;</span>
+                    <p>
+                    <p class="Question">Where can I watch? <span class="plus">&#43;</span></p>
+                    <p class="Question">How do I cancel? <span class="plus">&#43;</span></p>
+                    <p class="Question">What can I watch on Netflix? <span class="plus">&#43;</span></p>
+                    <p class="Question">Is Netflix good for kids? <span class="plus">&#43;</span></p>
+                    <p class="para6">Ready to watch? Enter your email to create or restart your membership</p>
+                </div>
+                <form class="form1" action="#">
+                    <input class="Email1" placeholder="Email address">
+                    <button class="sub" type="submit">
+                        Get Started
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="Help">
+        <div class="para5">
+            <div class="column4">
+                <div class="text-col3">
+                    <h2 class="call">Questions? Call
+                        <h2 class="number">000-800-919-1994</h2>
+                    </h2>
+                    <ul class="list">
+                        <li class="s">FAQ</li>
+                        <li class="s">Help Centre</li>
+                        <li class="s">Account</li>
+                        <li class="a">Media Centre</li>
+                        <li class="a">Investor Relations</li>
+                        <li class="a">Jobs</li>
+                        <li class="b">Ways to Watch</li>
+                        <li class="b">Terms of Use</li>
+                        <li class="b">Privacy</li>
+                        <li class="c">Cookie Preferences</li>
+                        <li class="c">Corporate Information</li>
+                        <li class="c">Contact Us</li>
+                        <li class="d">Speed Test</li>
+                        <li class="d">Legal Notices</li>
+                        <li class="d">Only on netflix</li>
+                    </ul>
+                    <div>
+                        <span class="material-symbols-outlined">
+                            language
+                        </span>
+                        <select class="English" id="English">
+                            <option value="English">
+                                English</option>
+                            <option value="Hindi">Hindi</option>
+                        </select>
+                    </div>
+                    <h4 class="e">Netflix India</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
